@@ -1,0 +1,35 @@
+# ============================================================
+# Step 1: Visual Feature Extraction — Dependencies
+# ============================================================
+# Install with: pip install -r requirements.txt
+#
+# Note: CLIP is installed separately with:
+#   pip install git+https://github.com/openai/CLIP.git
+# because it's not available on the standard PyPI registry.
+# ============================================================
+
+# PyTorch — the deep learning framework that CLIP runs on.
+# You likely already have this from your Qwen2-VL work.
+torch>=2.0
+
+# OpenCV — used to open video files and read individual frames.
+# The 'headless' version doesn't need a display/GUI.
+opencv-python-headless
+
+# NumPy — for saving extracted feature arrays as .npy files.
+numpy
+
+# tqdm — shows a nice progress bar during extraction.
+tqdm
+
+# HuggingFace Datasets — to read the .arrow annotation files
+# that came with your VATEX download.
+datasets
+
+# ftfy and regex — required dependencies for CLIP's text tokenizer.
+# Even though we only use the image encoder, CLIP's package needs these.
+ftfy
+regex
+
+# Pillow — for image processing (CLIP's preprocessor uses PIL internally).
+Pillow

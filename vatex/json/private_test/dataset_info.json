@@ -1,0 +1,98 @@
+{
+  "builder_name": "vatex",
+  "citation": "\n@InProceedings{Wang_2019_ICCV,\nauthor = {Wang, Xin and Wu, Jiawei and Chen, Junkun and Li, Lei and Wang, Yuan-Fang and Wang, William Yang},\ntitle = {VaTeX: A Large-Scale, High-Quality Multilingual Dataset for Video-and-Language Research},\nbooktitle = {The IEEE International Conference on Computer Vision (ICCV)},\nmonth = {October},\nyear = {2019}\n}\n",
+  "config_name": "v1.1",
+  "dataset_name": "vatex",
+  "dataset_size": 50458840,
+  "description": "VATEX is a large-scale multilingual video description dataset, which contains over 41,250 videos and 825,000 captions\nin both English and Chinese. VATEX is characterized by the following major unique properties.\nFirst, it contains both English and Chinese descriptions at scale, which can support many multilingual studies\nthat are constrained by monolingual datasets. Secondly, VATEX has a high number of clip-sentence pairs\nwith each video clip annotated with multiple unique sentences, and every caption is unique in\nthe whole corpus. Third, VATEX contains more comprehensive yet representative video content,\ncovering 600 human activities in total. Furthermore, both the English and Chinese corpora in\nVATEX are lexically richer and thus allow more natural and diverse caption generation.\n",
+  "download_checksums": {
+    "https://eric-xw.github.io/vatex-website/data/vatex_training_v1.0.json": {
+      "num_bytes": 57319458,
+      "checksum": null
+    },
+    "https://eric-xw.github.io/vatex-website/data/vatex_validation_v1.0.json": {
+      "num_bytes": 6598992,
+      "checksum": null
+    },
+    "https://eric-xw.github.io/vatex-website/data/vatex_public_test_english_v1.1.json": {
+      "num_bytes": 4933553,
+      "checksum": null
+    },
+    "https://eric-xw.github.io/vatex-website/data/vatex_private_test_without_annotations.json": {
+      "num_bytes": 263676,
+      "checksum": null
+    },
+    "https://eric-xw.github.io/vatex-website/data/vatex_public_test_without_annotations.json": {
+      "num_bytes": 252000,
+      "checksum": null
+    }
+  },
+  "download_size": 69367679,
+  "features": {
+    "videoID": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "path": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "start": {
+      "dtype": "int32",
+      "_type": "Value"
+    },
+    "end": {
+      "dtype": "int32",
+      "_type": "Value"
+    },
+    "enCap": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "chCap": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    }
+  },
+  "homepage": "https://eric-xw.github.io/vatex-website/index.html",
+  "license": "CC BY 4.0",
+  "size_in_bytes": 119826519,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 40252009,
+      "num_examples": 25991,
+      "dataset_name": "vatex"
+    },
+    "validation": {
+      "name": "validation",
+      "num_bytes": 4633996,
+      "num_examples": 3000,
+      "dataset_name": "vatex"
+    },
+    "public_test": {
+      "name": "public_test",
+      "num_bytes": 5083151,
+      "num_examples": 6000,
+      "dataset_name": "vatex"
+    },
+    "private_test": {
+      "name": "private_test",
+      "num_bytes": 489684,
+      "num_examples": 6278,
+      "dataset_name": "vatex"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}
